@@ -1,5 +1,6 @@
 apiVersion: apps/v1beta2
 metadata:
+kind: Service
 name: vpn
 spec:
 selector:
