@@ -1,6 +1,6 @@
-apiVersion: apps/v1beta2
-metadata:
+apiVersion: apps/v1
 kind: Deployment
+metadata:
 name: vpn
 spec:
 selector:
