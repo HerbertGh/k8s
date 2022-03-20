@@ -3,21 +3,3 @@ kind: Deployment
 name: vpn
 image: hwdsl2/ipsec-vpn-server
 imagePullPolicy: Always
-securityContext:
-privileged: true
-ports:
-- containerPort: 500
-  hostPort: 500
-  name: vpn-isakmp
-  protocol: UDP
- - containerPort: 4500
-  hostPort: 4500
-  name: vpn-ike
-  protocol: UDP
-env:
- - name: "VPN_IPSEC_PSK"
-   value: "vpn"
- - name: "VPN_USER"
-   value: "vpn"
- - name: "VPN_PASSWORD"
-   value: "vpn@123"
