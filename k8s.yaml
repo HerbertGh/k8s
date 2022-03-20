@@ -3,7 +3,6 @@ kind: Deployment
 validate: false
 metadata:
 spec:
-    containers:
       - name: vpn
         image: hwdsl2/ipsec-vpn-server
         imagePullPolicy: Always
