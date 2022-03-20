@@ -1,6 +1,6 @@
 apiVersion: apps/v1beta2
 metadata:
-kind: pod
+kind: Deployment
 name: vpn
 spec:
 selector:
